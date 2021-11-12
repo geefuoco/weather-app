@@ -72,3 +72,53 @@ body{
     font-weight: 600;
     color: $contrast;
 }
+
+.card {
+    min-height: 15rem;
+    width: 96vw;
+    max-width: 30rem;
+    padding: 1.5rem;
+    box-shadow: 0 0 .6rem $contrast;
+    border-radius: .4rem;
+    
+}
+
+.card-title{
+    font-size: 2.4rem;
+    padding: .2rem;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1.2rem;
+    gap: 2rem;
+}
+
+.temperature {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.air-pressure {
+    font-size: 1.2rem;
+}
+
+.description {
+    font-style: italic;
+}
+
+.toggle-button {
+    padding: .8rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: .4rem;
+    box-shadow: 0 0 .6rem $contrast;
+    &:hover{
+        cursor: pointer;
+        background-color: $main-hover;
+    }
+    &:active{
+        background-color: #777;
+    }
+}

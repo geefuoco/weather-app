@@ -16,10 +16,10 @@ const cityDisplay = (weatherObject) => {
   description.classList.add("description");
 
   cardTitle.innerText = weatherObject.name;
-  temperature.innerText = weatherObject.main.feels_like;
-  airPressure.innerText = weatherObject.main.pressure;
+  temperature.innerHTML = weatherObject.main.feels_like + "&deg; C";
+  airPressure.innerText = weatherObject.main.pressure + " hPa";
   description.innerText = weatherObject.weather[0].description;
-  toggleFahrenheit.innerHTML = "&deg; / F";
+  toggleFahrenheit.innerHTML = "Farenheit";
 
   cardBody.appendChild(temperature);
   cardBody.appendChild(airPressure);

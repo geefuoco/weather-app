@@ -43,6 +43,13 @@ const init = () => {
   };
 
   bindEvents();
+
+  const test = {
+    name: "Test City",
+    main: { feels_like: 20.7, pressure: 1070 },
+    weather: [{ description: "cloudy" }],
+  };
+  displayCity(test);
 };
 
 init();
